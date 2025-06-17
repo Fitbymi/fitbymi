@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 text-center text-gray-500">
-          <p>&copy; {currentYear} FitByMi, LLC. All rights reserved.</p>
+          <p>&copy; {currentYear} FitByMi, LLC. All rights reserved. | <a href="https://lmaisolutionist.com/" target="_blank">LM AI Solutionist</a></p>
         </div>
       </div>
     </footer>
