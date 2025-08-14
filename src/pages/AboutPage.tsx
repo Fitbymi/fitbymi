@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
@@ -90,6 +91,12 @@ const AboutPage: React.FC = () => {
       animate="animate"
       exit="exit"
     >
+      <Helmet>
+        <title>FitByMi - About Michelle Oliveira</title>
+        <meta name="description" content="Meet Michelle Oliveira, NASM-certified trainer with 9+ years experience, competitive bodybuilder & nutrition coach. 2023 Ms. Indiana champion." />
+        <meta name="keywords" content="Michelle Oliveira, personal trainer biography, NASM certified trainer, competitive bodybuilder, nutrition coach, fitness coach Indianapolis, personal trainer qualifications" />
+        <link rel="canonical" href="https://fitbymi.net/about" />
+      </Helmet>
       <Navbar />
       <main>
         {/* Hero Section */}
@@ -105,8 +112,8 @@ const AboutPage: React.FC = () => {
             <div className="absolute inset-0 bg-dark-950/75"></div>
           </div>
           <div className="container relative z-10 text-center">
-            <h1 className="text-5xl font-bold mb-4">About <span className="text-primary-500">Michelle Oliveira</span></h1>
-            <p className="text-xl max-w-2xl mx-auto text-gray-300">Certified Personal Trainer & Nutrition Coach</p>
+            <h1 className="text-4xl font-bold mb-4">About Your Certified Trainer, <span className="text-primary-500">Michelle Oliveira</span></h1>
+            <p className="text-xl max-w-2xl mx-auto text-gray-300">Your Certified Personal Trainer & Nutrition Coach</p>
           </div>
         </section>
 
@@ -220,10 +227,14 @@ const AboutPage: React.FC = () => {
               {/* Right Column - Content */}
               <motion.div variants={itemVariants} className="flex flex-col space-y-8">
                 <div>
-                  <h2 className="text-4xl font-bold mb-6">My <span className="text-primary-500">Journey</span></h2>
+                  <h2 className="text-4xl font-bold mb-6">My <span className="text-primary-500">Journey</span> as a Personal Trainer</h2>
                   <div className="space-y-6 text-gray-300">
                     <p>
-                      Hi, I'm Michelle Oliveira—fitness and nutrition coach, posing coach, competitor, and the founder of Fit by Mi. I created this coaching space to be more than just workouts and meal plans. This is about empowerment, confidence, and building the strongest version of you—inside and out.
+                      Hi, I'm <strong>Michelle Oliveira</strong>—<strong>NASM-certified personal trainer</strong>, nutrition coach, posing coach, competitive bodybuilder, and the founder of <strong>FitByMi, LLC</strong>. With over 9 years of experience in the fitness industry and a Ph.D. in Plant Sciences from the University of Florida, I bring both scientific rigor and real-world experience to every coaching relationship.
+                    </p>
+                    
+                    <p>
+                      I created this coaching space to be more than just workouts and meal plans. This is about empowerment, confidence, and building the strongest version of you—inside and out. As the <strong>2023 Ms. Indiana Bikini champion</strong>, I understand what it takes to achieve peak physical condition, but more importantly, I know how to help everyday people build sustainable, healthy habits that last a lifetime.
                     </p>
                     
                     {/* Image Carousel - Positioned between text blocks */}

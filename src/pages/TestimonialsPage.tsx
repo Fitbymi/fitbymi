@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -192,6 +193,12 @@ const TestimonialsPage: React.FC = () => {
       animate="animate"
       exit="exit"
     >
+      <Helmet>
+        <title>FitByMi - Client Success Stories & Results</title>
+        <meta name="description" content="Read real success stories from Michelle Oliveira's clients. See how custom workout plans, nutrition coaching & support transformed lives." />
+        <meta name="keywords" content="personal trainer testimonials, fitness success stories, client reviews, weight loss success, muscle building results, Michelle Oliveira reviews, personal training results" />
+        <link rel="canonical" href="https://fitbymi.net/testimonials" />
+      </Helmet>
       <Navbar />
       <main className="flex-1 pt-24">
         <motion.section 
@@ -202,12 +209,15 @@ const TestimonialsPage: React.FC = () => {
         >
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-4xl md:text-4xl font-bold mb-6">
                 <BookOpenCheck className="inline-block mr-3 text-primary-500" size={36} />
-                What My Clients Say
+                Client Success Testimonial Stories
               </h1>
-              <p className="text-gray-300">
-                Here's what my clients have to say about their transformation journeys.
+              <p className="text-l text-gray-300 max-w-2xl mx-auto">
+                Discover real success stories from clients who have transformed their bodies and lives through 
+                <strong> Michelle Oliveira's personal training programs</strong>. Read authentic testimonials about our 
+                <strong> custom workout plans</strong>, <strong>nutrition coaching</strong>, and personalized support that 
+                delivers real results.
               </p>
             </div>
           </div>

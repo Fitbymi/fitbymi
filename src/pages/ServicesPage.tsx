@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
@@ -273,6 +274,12 @@ const ServicesPage: React.FC = () => {
       animate="animate"
       exit="exit"
     >
+      <Helmet>
+        <title>FitByMi - Personal Training Services</title>
+        <meta name="description" content="Choose from custom workout plans, nutrition coaching, posing instruction & specialized programs for abs and glute building. Get started today!" />
+        <meta name="keywords" content="personal training services, custom workout plans, nutrition coaching, posing instruction, bodybuilding programs, weight loss programs, muscle building, online fitness coaching" />
+        <link rel="canonical" href="https://fitbymi.net/services" />
+      </Helmet>
       <Navbar />
       <main className="flex-1 pt-24">
         <motion.section 
@@ -283,10 +290,14 @@ const ServicesPage: React.FC = () => {
         >
           <div className="container">
             <div className="max-w-4xl mx-auto text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-4xl md:text-4xl font-bold mb-6">
                 <ShoppingBag className="inline-block mr-3 text-primary-500" size={36} />
-                Fitness & <span className="text-primary-500">Nutrition</span> Programs
+                Personal Training Services & <span className="text-primary-500">Nutrition</span> Programs
               </h1>
+              <p className="text-l text-gray-300 mb-8 max-w-3xl mx-auto">
+                Our comprehensive range of <strong>personal training services</strong> are designed to help you achieve your specific fitness goals. 
+                Whether you're looking for <strong>custom workout plans</strong>, <strong>nutrition coaching</strong>, or specialized programs, we have the perfect solution for your fitness journey.
+              </p>
               <div className="text-center">
                 <motion.div
                   initial={{ scale: 0.9, opacity: 0 }}

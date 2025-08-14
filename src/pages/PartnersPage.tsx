@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, ChevronLeft, ChevronRight, Coffee, Dumbbell, ShoppingBag, Utensils, Handshake } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
@@ -365,17 +366,25 @@ const PartnersPage: React.FC = () => {
       animate="animate"
       exit="exit"
     >
+      <Helmet>
+        <title>Fitness Partners & Discount Codes | Supplements & Gear</title>
+        <meta name="description" content="Save on supplements, competition wear & fitness gear with Michelle Oliveira's exclusive discount codes. Trusted brands for your fitness journey." />
+        <meta name="keywords" content="fitness discounts, supplement discount codes, competition wear, fitness gear, protein supplements, workout equipment, fitness brand partners" />
+        <link rel="canonical" href="https://fitbymi.net/partners" />
+      </Helmet>
       <Navbar />
       <main className="flex-1 pt-24">
         <section className="py-16 bg-dark-900" ref={ref}>
           <div className="container">
             <div className="max-w-4xl mx-auto text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-4xl md:text-4xl font-bold mb-6">
                 <Handshake className="inline-block mr-3 text-primary-500" size={36} />
-                Our <span className="text-primary-500">Partners</span>
+                Fitness Brand <span className="text-primary-500">Partners</span> & Discount Codes
               </h1>
-              <p className="text-gray-300">
-                I'm proud to partner with these amazing brands. Use my discount codes to save on your purchases!
+              <p className="text-l text-gray-300 max-w-2xl mx-auto">
+                I'm proud to partner with these trusted <strong>fitness brands</strong> and <strong>supplement companies</strong>. 
+                Use my exclusive discount codes to save on <strong>supplements</strong>, <strong>competition wear</strong>, 
+                <strong>workout gear</strong>, and <strong>nutrition products</strong> that I personally use and recommend!
               </p>
             </div>
 

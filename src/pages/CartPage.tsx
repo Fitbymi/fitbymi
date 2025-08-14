@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ShoppingCart, X, CreditCard, Loader } from 'lucide-react';
 import { loadStripe } from '@stripe/stripe-js';
 import Navbar from '../components/Navbar';
@@ -145,16 +146,21 @@ const CartPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>FitByMi - Shopping Cart</title>
+        <meta name="description" content="Review selected personal training services & proceed to checkout. Secure payment for custom workout plans, nutrition coaching & fitness programs." />
+        <link rel="canonical" href="https://fitbymi.net/cart" />
+      </Helmet>
       <Navbar />
       <main className="flex-1 py-24 bg-dark-900">
         <div className="container max-w-4xl mx-auto px-4">
           <div className="mb-10 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-4xl font-bold mb-4">
               <ShoppingCart className="inline-block mr-3 text-primary-500" size={36} />
               Your Cart
             </h1>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Review your selected services before checkout
+            <p className="text-l text-gray-300 max-w-2xl mx-auto">
+              Review your selected <strong>personal training services</strong> and <strong>fitness programs</strong> before proceeding to secure checkout.
             </p>
           </div>
 

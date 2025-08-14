@@ -9,6 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="description" content="Get fit with personalized online coaching, custom workouts, nutrition tips, and 1-on-1 support from a certified personal trainer. Transform your body today!" />
     <meta name="robots" content="index, follow">
+    <meta name="keywords" content="personal trainer, online fitness coaching, nutrition coaching, workout plans, posing coach, bodybuilding, weight loss, muscle building, Indianapolis fitness trainer, certified trainer">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -17,15 +18,36 @@
     <meta property="og:url" content="https://fitbymi.net/">
     <!-- <meta property="og:image" content="https://vg-bunny-cdn.b-cdn.net/public/n7qkwzcg_.png"> -->
     <meta property="og:site_name" content="FitByMi, LLC">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="FitByMi, LLC | Personal Fitness Training">
+    <meta property="twitter:description" content="Transform your body with certified personal trainer Michelle Oliveira. Personalized coaching, workout plans, and nutrition guidance.">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": ["Organization", "LocalBusiness"],
       "name": "FitByMi, LLC",
       "url": "https://fitbymi.net/",
       //"logo": "https://lmaisolutionist.com/LM Logo Black BG.png",
       "description": "Get fit with personalized online coaching, custom workouts, nutrition tips, and 1-on-1 support from a certified personal trainer. Transform your body today!",
+      "founder": {
+        "@type": "Person",
+        "name": "Michelle Oliveira",
+        "jobTitle": "Certified Personal Trainer & Nutrition Coach"
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "39.7684",
+          "longitude": "-86.1581"
+        },
+        "geoRadius": "50000"
+      },
+      "areaServed": "United States",
+      "priceRange": "$80-$250",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Indianapolis",
@@ -34,9 +56,15 @@
       },
       "contactPoint": {
         "@type": "ContactPoint",
+        "email": "Michelle2.0fit@gmail.com",
         "areaServed": "US",
-        "availableLanguage": ["English", "Spanish", "Portuguese"]
-      }
+        "availableLanguage": ["English", "Spanish", "Portuguese"],
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.instagram.com/michelleoliveira.fit/",
+        "https://www.buymeacoffee.com/MichelleO"
+      ]
     }
     </script>
   </head>

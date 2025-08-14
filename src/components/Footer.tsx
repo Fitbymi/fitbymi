@@ -16,8 +16,25 @@ const Footer: React.FC = () => {
               <span>Fit By Mi, LLC</span>
             </Link>
             <p className="mb-6 text-gray-400">
-              Dedicated to helping you achieve your fitness goals through personalized training programs and nutrition plans.
+              <strong>FitByMi, LLC</strong> is dedicated to helping you achieve your fitness goals through 
+              <strong> personalized training programs</strong> and <strong>nutrition coaching</strong>. Led by 
+              <strong> certified personal trainer Michelle Oliveira</strong>, we provide online fitness coaching 
+              services to clients worldwide.
             </p>
+            
+            <div className="text-sm text-gray-500 space-y-2">
+              <p>
+                <strong>Services:</strong> <a href="/services" className="text-primary-500 hover:text-primary-400">Personal Training</a> | 
+                <a href="/services" className="text-primary-500 hover:text-primary-400 ml-1">Nutrition Coaching</a> | 
+                <a href="/services" className="text-primary-500 hover:text-primary-400 ml-1">Posing Instruction</a>
+              </p>
+              <p>
+                <strong>Specialties:</strong> Weight Loss, Muscle Building, Competition Prep, Online Coaching
+              </p>
+              <p>
+                <strong>Certifications:</strong> NASM Certified Personal Trainer, NASM Nutrition Coach
+              </p>
+            </div>
           </div>
 
           {/* Contact Info */}

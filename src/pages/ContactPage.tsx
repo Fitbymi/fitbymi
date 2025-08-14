@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
@@ -175,6 +176,12 @@ const ContactPage: React.FC = () => {
       animate="animate"
       exit="exit"
     >
+      <Helmet>
+        <title>FitByMi - Contact Michelle Oliveira</title>
+        <meta name="description" content="Get in touch with certified trainer Michelle Oliveira. Ask about fitness programs, schedule consultation, or learn how we can help reach your goals." />
+        <meta name="keywords" content="contact personal trainer, fitness consultation, Michelle Oliveira contact, personal training inquiry, fitness coaching contact" />
+        <link rel="canonical" href="https://fitbymi.net/contact" />
+      </Helmet>
       <Navbar />
       <main className="flex-1 pt-24">
         <motion.section 
@@ -185,13 +192,15 @@ const ContactPage: React.FC = () => {
         >
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-4xl md:text-4xl font-bold mb-6">
                 <MessageSquare className="inline-block mr-3 text-primary-500" size={36} />
-                Contact Me
+                Contact Michelle Oliveira
               </h1>
-              <p className="text-gray-300">
-                Have questions about my training programs or want to learn more about how I can help you reach your fitness goals? 
-                I'm just a message away!
+              <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+                Have questions about our <strong>personal training programs</strong> or want to learn more about how certified trainer 
+                <strong> Michelle Oliveira</strong> can help you reach your fitness goals? Whether you're interested in 
+                <strong> custom workout plans</strong>, <strong>nutrition coaching</strong>, or <strong>posing instruction</strong>, 
+                I'm here to help you start your transformation journey.
               </p>
             </div>
           </div>
