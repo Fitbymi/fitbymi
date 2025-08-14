@@ -76,9 +76,14 @@ const Hero: React.FC = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
+          <motion.div variants={itemVariants} className="mb-8">
+            <h1 className="sr-only">FitByMi Personal Fitness Training with Michelle Oliveira</h1>
+          </motion.div>
+          
           <motion.h1 
             className="mb-24 font-extrabold leading-tight tracking-tight"
             variants={itemVariants}
+            role="banner"
           >
             <div className="opacity-60">
               <span>GET</span>
@@ -92,7 +97,9 @@ const Hero: React.FC = () => {
             className="mb-10 text-lg text-gray-300"
             variants={itemVariants}
           >
-            <p className="opacity-75">Personalized workout plans, nutrition guidance, and expert coaching to help reach your peak physical condition.</p>
+            <p className="opacity-75">
+              Improve your body with <strong>certified personal trainer Michelle Oliveira</strong>. Whether you're looking to lose weight, build muscle, or prepare for competition, our proven programs help you achieve lasting results.
+            </p>
           </motion.p>
           
           <motion.div 

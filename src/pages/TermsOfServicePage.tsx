@@ -40,14 +40,15 @@ const TermsOfServicePage: React.FC = () => {
                 Please read these terms and conditions carefully before using our services.
               </p>
               <p className="text-sm text-gray-400 mt-4">
-                Last updated: January {currentYear}
+                Last updated: Last updated: August 2025
               </p>
             </div>
 
             <div className="bg-dark-800 rounded-xl p-8 space-y-8">
               <div>
                 <p className="text-gray-300 leading-relaxed">
-                  These Terms of Service ("Terms") govern your use of the FitByMi, LLC website and fitness coaching services operated by Michelle Oliveira. By accessing or using our services, you agree to be bound by these Terms.
+                  These Terms of Service ("Terms") govern your use of the FitByMi, LLC website and fitness coaching services 
+                  operated by Michelle Oliveira ("we," "our," or "us"). By accessing or using our services, you agree to be bound by these Terms.
                 </p>
               </div>
 

@@ -211,13 +211,16 @@ const Testimonials: React.FC = () => {
             className="mb-6"
             variants={itemVariants}
           >
-            Success Stories
+            Real Client Success Stories & Transformations
           </motion.h2>
           <motion.p 
-            className="text-gray-300"
+            className="text-l text-gray-300 max-w-2xl mx-auto"
             variants={itemVariants}
           >
-            Here's what my clients have to say about their transformation journeys.
+            Read authentic testimonials from clients who have achieved incredible results through 
+            <strong>Michelle Oliveira's personal training programs</strong>. These real success stories showcase 
+            the power of our <strong>custom workout plans</strong>, <strong>nutrition coaching</strong>, and 
+            personalized support in transforming lives.
           </motion.p>
         </motion.div>
 

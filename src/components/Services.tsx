@@ -435,9 +435,19 @@ const Services: React.FC = ({ addToCart }) => {
     <section id="services" className="section-padding bg-dark-900" ref={ref}>
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="mb-6">Fitness & Nutrition Programs</h2>
-          <p className="text-gray-300">
-            Choose the perfect plan that aligns with your fitness goals and lifestyle.</p>
+          <h2 className="mb-6">Personal Training Services & Nutrition Programs</h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Choose the perfect <strong>personal training program</strong> that aligns with your fitness goals and lifestyle. 
+            Whether you need <strong>custom workout plans</strong>, <strong>nutrition coaching</strong>, or specialized training, 
+            we have evidence-based programs designed to deliver real results.
+          </p>
+          
+          <div className="mt-8 text-gray-400">
+            <p>
+              All programs include direct access to <strong>certified personal trainer Michelle Oliveira</strong>, 
+              regular progress check-ins, and ongoing support through our coaching app and exclusive community.
+            </p>
+          </div>
         </div>
 
         {isMobile ? (
