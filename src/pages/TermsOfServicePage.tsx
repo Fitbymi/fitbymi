@@ -47,8 +47,7 @@ const TermsOfServicePage: React.FC = () => {
             <div className="bg-dark-800 rounded-xl p-8 space-y-8">
               <div>
                 <p className="text-gray-300 leading-relaxed">
-                  These Terms of Service ("Terms") govern your use of the FitByMi, LLC website and fitness coaching services 
-                  operated by Michelle Oliveira ("we," "our," or "us"). By accessing or using our services, you agree to be bound by these Terms.
+                  These Terms of Service ("Terms") govern your use of the FitByMi, LLC website and fitness coaching services operated by Michelle Oliveira. By accessing or using our services, you agree to be bound by these Terms.
                 </p>
               </div>
 
