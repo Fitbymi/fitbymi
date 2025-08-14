@@ -76,12 +76,31 @@ const Footer: React.FC = () => {
                   Subscribe to my Newsletter
                 </Link>
               </li>
+              <li>
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-primary-500 transition-colors duration-300">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms-of-service" className="text-gray-400 hover:text-primary-500 transition-colors duration-300">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 text-center text-gray-500">
           <p>&copy; {currentYear} FitByMi, LLC. All rights reserved. | <a href="https://lmaisolutionist.com/" target="_blank">LM AI Solutionist</a></p>
+          <div className="flex justify-center gap-4 mt-2 text-sm">
+            <Link to="/privacy-policy" className="text-gray-400 hover:text-primary-500 transition-colors duration-300">
+              Privacy Policy
+            </Link>
+            <span className="text-gray-600">•</span>
+            <Link to="/terms-of-service" className="text-gray-400 hover:text-primary-500 transition-colors duration-300">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

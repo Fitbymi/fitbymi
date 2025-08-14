@@ -11,6 +11,8 @@ import ContactPage from './pages/ContactPage';
 import PartnersPage from './pages/PartnersPage';
 import UnsubscribePage from './pages/UnsubscribePage';
 import SubscribePage from './pages/SubscribePage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
       <Route path="/partners" element={<PartnersPage />} />
       <Route path="/unsubscribe" element={<UnsubscribePage />} />
       <Route path="/subscribe" element={<SubscribePage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+      <Route path="/terms-of-service" element={<TermsOfServicePage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
